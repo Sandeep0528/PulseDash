@@ -1,10 +1,11 @@
 [build]
-  # Navigate to the correct folder before running the build
   base = "personalized-content-dashboard"
-  # Use npm run build so it looks in node_modules
-  command = "npm run build"
-  # Let the Next.js plugin handle the output
+  # This manually clears the bad flag from the environment before running build
+  command = "unset NODE_OPTIONS && npm run build"
   publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
