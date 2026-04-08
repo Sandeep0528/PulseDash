@@ -20,4 +20,8 @@ A high-performance, responsive dashboard built with **Next.js 14**, **Redux Tool
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/YOUR_USERNAME/personalized-content-dashboard.git](https://github.com/Sandeep0528/PulseDash.git)
+<<<<<<< HEAD
    cd personalized-content-dashboard
+=======
+   cd personalized-content-dashboard
+>>>>>>> b766698f1ab6188d80a3637565b73c72ee3db83e
