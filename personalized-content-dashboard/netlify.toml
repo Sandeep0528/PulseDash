@@ -1,5 +1,8 @@
 [build]
   base = "personalized-content-dashboard"
-  command = "npm run build"
+  # We force NODE_OPTIONS to be empty and restrict CPUs to 1 at the system level
+  command = "export NODE_OPTIONS='' && export CIRCLECI=true && npm run build"
   publish = "out"
 
+[build.environment]
+  NODE_VERSION = "20"
