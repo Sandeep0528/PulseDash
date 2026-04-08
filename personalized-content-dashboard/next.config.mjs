@@ -1,9 +1,14 @@
-/**  @type { import('next').NextConfig } */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export', // This is the magic line
+    output: 'export',
     images: {
-        unoptimized: true, // Required for static export
+        unoptimized: true,
     },
+    // THIS IS THE FIX: It stops the "Invalid value for --ignoreDeprecations" crash
+    experimental: {
+        workerThreads: false,
+        cpus: 1
+    }
 };
 
 export default nextConfig;
