@@ -1,0 +1,10 @@
+[build]
+  # Navigate to the correct folder before running the build
+  base = "personalized-content-dashboard"
+  # Use npm run build so it looks in node_modules
+  command = "npm run build"
+  # Let the Next.js plugin handle the output
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
