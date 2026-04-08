@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { setSearchQuery } from '@/store/slices/userSlice';
-import { RootState } from '@/store/store';
+// import { RootState } from '@/store/store';
 import { Search, X } from 'lucide-react';
 import { useDebounce } from '@/hooks/useDebounce';
 

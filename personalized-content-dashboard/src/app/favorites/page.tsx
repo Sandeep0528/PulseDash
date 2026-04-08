@@ -11,7 +11,7 @@ export default function FavoritesPage() {
         <div className="space-y-8 p-4 lg:p-0">
             <header>
                 <h1 className="text-3xl font-bold tracking-tight">My Favorites</h1>
-                <p className="text-zinc-500">Items you've saved for later.</p>
+                <p className="text-zinc-500">It&apos;s your favorites.</p>
             </header>
 
             {favorites.length > 0 ? (
